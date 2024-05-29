@@ -1,8 +1,8 @@
-package dev.jhonc.lib.demolib.controller.advice;
+package dev.jhonc.lib.common.controller.advice;
 
-import dev.jhonc.lib.demolib.exception.NoDataException;
-import dev.jhonc.lib.demolib.exception.ValidationException;
-import dev.jhonc.lib.demolib.exception.dto.ErrorDTO;
+import dev.jhonc.lib.common.exception.NoDataException;
+import dev.jhonc.lib.common.exception.ValidationException;
+import dev.jhonc.lib.common.exception.dto.ErrorDTO;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolationException;
 import java.io.Serial;

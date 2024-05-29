@@ -1,4 +1,4 @@
-package dev.jhonc.lib.demolib;
+package dev.jhonc.lib.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

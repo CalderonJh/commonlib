@@ -1,29 +1,42 @@
-package dev.jhonc.lib.demolib.service;
+package dev.jhonc.lib.common.service;
 
-import dev.jhonc.lib.demolib.config.Properties;
+import dev.jhonc.lib.common.config.Properties;
+import java.util.Arrays;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
-
+/**
+ * Service to get messages from the messages.properties file
+ */
 @Service
 @Slf4j
 @PropertySource("classpath:messages.properties")
-public class MessagesService {
+public class Messages {
   private Properties configProperties;
   private Environment environment;
 
-  public String msg(String key) {
+  /**
+   * Get a message from the messages.properties file
+   * @param key The key of the message
+   * @return The message or the key if the message is not found
+   */
+  public String show(String key) {
     String msg = environment.getProperty(key);
     log.warn("Property 1: {}", msg);
     log.warn(configProperties.getTester());
     return msg == null ? key : msg;
   }
 
-  public String msg(String key, Object... values) {
+  /**
+   * Get a message from the messages.properties file and format it with the given values
+   * @param key The key of the message
+   * @param values The values to format the message
+   * @return The formatted message or the key if the message is not found
+   */
+  public String show(String key, Object... values) {
     String msg = environment.getProperty(key);
     try {
       return msg == null ? key : String.format(msg, values);

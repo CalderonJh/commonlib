@@ -1,4 +1,4 @@
-package dev.jhonc.lib.demolib.config;
+package dev.jhonc.lib.common.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -1,4 +1,4 @@
-package dev.jhonc.lib.demolib.utils;
+package dev.jhonc.lib.common.utils;
 
 import lombok.extern.slf4j.Slf4j;
 

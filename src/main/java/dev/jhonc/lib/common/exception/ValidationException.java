@@ -1,4 +1,4 @@
-package dev.jhonc.lib.demolib.exception;
+package dev.jhonc.lib.common.exception;
 
 public class ValidationException extends RuntimeException{
 		public ValidationException(String message) {

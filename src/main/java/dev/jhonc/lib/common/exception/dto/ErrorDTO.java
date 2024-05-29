@@ -1,4 +1,4 @@
-package dev.jhonc.lib.demolib.exception.dto;
+package dev.jhonc.lib.common.exception.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
